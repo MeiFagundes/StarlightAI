@@ -7,7 +7,7 @@ namespace Starlight
 
         public static void Main()
         {
-            SentimentCognition.Example.MLMain();
+            MLCore.MLSentimentCore.Cognize("b aaaaaaaaaaaaaaaaaaaaaaaaaaa bbbbbbbb", "test");
         }
     }
 }

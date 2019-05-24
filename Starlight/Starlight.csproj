@@ -9,9 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Data\example.txt">
+    <None Update="Dataset\test.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>
