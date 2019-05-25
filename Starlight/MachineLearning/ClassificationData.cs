@@ -3,13 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Starlight.MLCore {
-    class MLSentimentData {
+namespace Starlight.MachineLearning {
+    class ClassificationData {
 
         [LoadColumn(0), ColumnName("Label")]
-        public bool Sentiment;
+        public bool Classification;
 
         [LoadColumn(1)]
-        public string SentimentText;
+        public string Content;
     }
 }

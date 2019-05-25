@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Starlight.MLCore {
-    class MLSentimentPrediction : MLSentimentData {
+namespace Starlight.MachineLearning {
+    class ClassificationPrediction : ClassificationData {
 
         [ColumnName("PredictedLabel")]
 
