@@ -5,7 +5,7 @@ using System.Text;
 using Starlight.MachineLearning;
 
 namespace Starlight {
-    class ClassificationController {
+    public class ClassificationController {
 
         static readonly string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset");
         static List<string> _intentList;
