@@ -49,3 +49,13 @@
 0	i don't like the weather today
 0	remind me to take my coat with me tomorrow
 0	remind me that it's going to rain tomorrow
+0	Show the news
+0	Show new information
+0	are there any news
+0	What is happening today
+0	What happened then
+0	what's going on in the news today
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework

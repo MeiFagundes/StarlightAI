@@ -8,8 +8,12 @@ namespace Starlight {
     public class Starlight {
         public static void Main() {
 
-            Console.WriteLine("Enter a phrase:");
-            ClassificationController.Cognize(Console.ReadLine());
+            ClassificationController cc = new ClassificationController();
+
+            while (true) {
+                Console.WriteLine("Enter a phrase:");
+                cc.Cognize(Console.ReadLine());
+            }
         }
     }
 }

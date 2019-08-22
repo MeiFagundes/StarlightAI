@@ -2,5 +2,56 @@
 1	can you remind me about my medication tomorrow
 1	i want to remember about my lessons later today
 1	remind me to do my homework
+1	add a reminder for tomorrow
 0	i didn't remember about my coding today
 0	i wish i cold remember the important things in my life
+0	i don't like the bad news recently
+0	Show weather
+0	Show climate
+0	Show temperature
+0	What is today's weather
+0	What is today's climate
+0	What is today's temperature
+0	How is today's weather
+0	How is today's climate
+0	How is today's temperature
+0	Is it going to rain
+0	Is it going to be sunny
+0	Is it going to be cloudy
+0	Will it rain today
+0	Will it be rainy today
+0	Will it be cloudy today
+0	Is today going to have a good weather
+0	Is today going to have a good climate
+0	Is today going to have a good temperature
+0	Should I get an umbrella
+0	Should I get an jacket
+0	May I get a cold if I go out today
+0	Is it cold today
+0	Is it hot today
+0	Is it going to be sweltering 
+0	Is it going to be warm 
+0	Is it going to be clear 
+0	Is it going to be misty 
+0	Is it going to be breezy
+0	Is it going to be showery
+0	Is it going to be frosty 
+0	Is it going to be icy
+0	Is it going to be dry
+0	Is it going to be freezing
+0	Is it going to be cold
+0	Is it going to be cloudy
+0	Is it going to be stormy
+0	Is it going to be foggy
+0	Is it going to be snowy
+0	Is it going to be drizzly
+0	Is it pouring down
+0	Is it raining cats and dogs
+0	Is it thundering and lightining
+0	Is the wind blowing
+0	What's it like outside
+0	How's it like outside
+0	Do you have rain
+0	Is it a beautiful day for a walk
+0	What’s the weather forecast
+0	i don't like the weather today

@@ -8,24 +8,37 @@ namespace Starlight {
     class ClassificationController {
 
         static readonly string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset");
-        public static void Cognize(string query) {
+        static List<string> _intentList;
+        List<BinaryClassificator> _binaryClassificators;
+
+        public ClassificationController() {
+
+            _binaryClassificators = new List<BinaryClassificator>();
+
             foreach (var intentName in GetIntentList()) {
 
-                BinaryClassificator bc = 
-                    new BinaryClassificator(intentName, false);
-                bc.Classify(query);
+                _binaryClassificators.Add(new BinaryClassificator(intentName, false));
+                
             }
+        }
+
+        
+        public void Cognize(string query) {
+
+            for (int i = 0; i < _intentList.Count; i++)
+                _binaryClassificators[i].Classify(query);
+
         }
 
         static List<string> GetIntentList() {
 
             DirectoryInfo d = new DirectoryInfo(datasetPath);
             FileInfo[] files = d.GetFiles("*.txt");
-            List<string> intentList = new List<string>();
+            _intentList = new List<string>();
             foreach (FileInfo file in files) {
-                 intentList.Add(file.Name.Replace(".txt", string.Empty));
+                _intentList.Add(file.Name.Replace(".txt", string.Empty));
             }
-            return intentList;
+            return _intentList;
         }
     }
 }
