@@ -1,0 +1,6 @@
+﻿1	remind me to wash my clothes tomorrow
+1	can you remind me about my medication tomorrow
+1	i want to remember about my lessons later today
+1	remind me to do my homework
+0	i didn't remember about my coding today
+0	i wish i cold remember the important things in my life

@@ -1,7 +1,0 @@
-﻿0	aaaaaaaaaaaaaaaa
-1	bbbbbbbbbbbbbbb
-1	bbbbbbbbbbbbbbb
-0	aaaaaaaaaaaaaaaaaaaa
-1	bbbbbbbbbbb
-0	aaaaaaaaaaaaa
-1	bbbbbbbbbb

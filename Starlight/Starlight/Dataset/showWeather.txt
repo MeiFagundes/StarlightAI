@@ -1,0 +1,51 @@
+1	Show weather
+1	Show climate
+1	Show temperature
+1	What is today's weather
+1	What is today's climate
+1	What is today's temperature
+1	How is today's weather
+1	How is today's climate
+1	How is today's temperature
+1	Is it going to rain
+1	Is it going to be sunny
+1	Is it going to be cloudy
+1	Will it rain today
+1	Will it be rainy today
+1	Will it be cloudy today
+1	Is today going to have a good weather
+1	Is today going to have a good climate
+1	Is today going to have a good temperature
+1	Should I get an umbrella
+1	Should I get an jacket
+1	May I get a cold if I go out today
+1	Is it cold today
+1	Is it hot today
+1	Is it going to be sweltering 
+1	Is it going to be warm 
+1	Is it going to be clear 
+1	Is it going to be misty 
+1	Is it going to be breezy
+1	Is it going to be showery
+1	Is it going to be frosty 
+1	Is it going to be icy
+1	Is it going to be dry
+1	Is it going to be freezing
+1	Is it going to be cold
+1	Is it going to be cloudy
+1	Is it going to be stormy
+1	Is it going to be foggy
+1	Is it going to be snowy
+1	Is it going to be drizzly
+1	Is it pouring down
+1	Is it raining cats and dogs
+1	Is it thundering and lightining
+1	Is the wind blowing
+1	What's it like outside
+1	How's it like outside
+1	Do you have rain
+1	Is it a beautiful day for a walk
+1	What’s the weather forecast
+0	i don't like the weather today
+0	remind me to take my coat with me tomorrow
+0	remind me that it's going to rain tomorrow

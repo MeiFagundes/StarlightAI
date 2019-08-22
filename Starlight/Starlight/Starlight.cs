@@ -8,9 +8,8 @@ namespace Starlight {
     public class Starlight {
         public static void Main() {
 
-            BinaryClassificator bc = new BinaryClassificator("test");
             Console.WriteLine("Enter a phrase:");
-            bc.Classify(Console.ReadLine());
+            ClassificationController.Cognize(Console.ReadLine());
         }
     }
 }

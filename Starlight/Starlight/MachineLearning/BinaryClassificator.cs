@@ -29,8 +29,6 @@ namespace Starlight.MachineLearning {
 
         public void Classify(string query) {
 
-            
-
             ClassificationData statement = new ClassificationData {
                 Content = query
             };
