@@ -12,6 +12,7 @@ namespace Starlight {
 
             while (true) {
                 Console.WriteLine("Enter a phrase:");
+                Console.WriteLine("> ");
                 cc.Cognize(Console.ReadLine());
             }
         }

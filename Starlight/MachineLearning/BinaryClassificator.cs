@@ -15,12 +15,14 @@ namespace Starlight.MachineLearning {
 
         public BinaryClassificator(string datasetName, bool hasHeader) {
 
+            Console.WriteLine("---- Building " + datasetName + " Dataset Object ----");
             _mlContext = new MLContext();
             _datasetName = datasetName;
             string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset", _datasetName + ".txt");
             TrainTestData splitDataView = LoadData(datasetPath, hasHeader);
             _model = BuildAndTrainModel(splitDataView.TrainSet);
             Evaluate(splitDataView.TestSet);
+            Console.WriteLine("----------------------------------------------------");
         }
 
         public BinaryClassificator(string datasetName) : this(datasetName, false) {
@@ -29,6 +31,7 @@ namespace Starlight.MachineLearning {
 
         public void Classify(string query) {
 
+            
             ClassificationData statement = new ClassificationData {
                 Content = query
             };
@@ -43,20 +46,18 @@ namespace Starlight.MachineLearning {
 
             // Training model
             Console.WriteLine("Building and training " + _datasetName + " model...");
-            Console.WriteLine();
             return estimator.Fit(splitTrainSet);
         }
 
         void Evaluate(IDataView splitTestSet) {
 
-            Console.WriteLine("==== Evaluating Model accuracy with Dataset ====");
+            Console.WriteLine("Evaluating Model accuracy with Dataset");
             IDataView predictions = _model.Transform(splitTestSet);
             CalibratedBinaryClassificationMetrics metrics = _mlContext.BinaryClassification.Evaluate(predictions, "Label");
 
             Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
             Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
             Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
-            Console.WriteLine("==== End of model evaluation ====");
             Console.WriteLine();
         }
 
@@ -75,13 +76,12 @@ namespace Starlight.MachineLearning {
 
             var resultprediction = predictionFunction.Predict(statement);
 
-            Console.WriteLine();
-            Console.WriteLine("==== Prediction of " + _datasetName + " model ====");
+            Console.WriteLine("---- Prediction of " + _datasetName + " model ----");
             Console.WriteLine("Query: " + resultprediction.Content
                 + " | Prediction (" + _datasetName + "): " + Convert.ToBoolean(resultprediction.Prediction) 
                 + " | Probability: " + resultprediction.Probability);
 
-            Console.WriteLine("==== End of Predictions ====");
+            Console.WriteLine("---------------------------------------------------");
             Console.WriteLine();
         }
     }
