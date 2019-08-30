@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using Starlight.MachineLearning;
 
 namespace Starlight {
@@ -14,7 +13,7 @@ namespace Starlight {
         public ClassificationController() {
 
             _binaryClassificators = new List<BinaryClassificator>();
-            Console.WriteLine("======= Starlight ML Cognition =======");
+            Console.WriteLine("=============== Starlight ML Cognition ===============\n");
 
             foreach (var intentName in GetIntentList()) {
 

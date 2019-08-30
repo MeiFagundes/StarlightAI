@@ -1,8 +1,4 @@
-﻿
-
-using Starlight.MachineLearning;
-using System;
-using System.IO;
+﻿using System;
 
 namespace Starlight {
     public class Starlight {
@@ -11,8 +7,8 @@ namespace Starlight {
             ClassificationController cc = new ClassificationController();
 
             while (true) {
-                Console.WriteLine("Enter a phrase:");
-                Console.WriteLine("> ");
+                Console.WriteLine("Enter an utterance:");
+                Console.Write("> ");
                 cc.Cognize(Console.ReadLine());
             }
         }

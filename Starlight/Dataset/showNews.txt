@@ -7,9 +7,9 @@
 1	What happened then
 1	what's going on in the news today
 0	i don't like the bad news recently
-0	Show weather
-0	Show climate
-0	Show temperature
+0	show weather
+0	show climate
+0	show temperature
 0	What is today's weather
 0	What is today's climate
 0	What is today's temperature

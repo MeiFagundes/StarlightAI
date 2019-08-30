@@ -1,9 +1,7 @@
 ﻿using Microsoft.ML;
 using Microsoft.ML.Data;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using static Microsoft.ML.DataOperationsCatalog;
 
 namespace Starlight.MachineLearning {
@@ -15,14 +13,14 @@ namespace Starlight.MachineLearning {
 
         public BinaryClassificator(string datasetName, bool hasHeader) {
 
-            Console.WriteLine("---- Building " + datasetName + " Dataset Object ----");
+            Console.WriteLine("-------- Building " + datasetName + " Dataset Object --------");
             _mlContext = new MLContext();
             _datasetName = datasetName;
             string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset", _datasetName + ".txt");
             TrainTestData splitDataView = LoadData(datasetPath, hasHeader);
             _model = BuildAndTrainModel(splitDataView.TrainSet);
             Evaluate(splitDataView.TestSet);
-            Console.WriteLine("----------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------\n");
         }
 
         public BinaryClassificator(string datasetName) : this(datasetName, false) {
@@ -58,7 +56,6 @@ namespace Starlight.MachineLearning {
             Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
             Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
             Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
-            Console.WriteLine();
         }
 
         TrainTestData LoadData(String datasetPath, bool hasHeader) {
@@ -76,12 +73,12 @@ namespace Starlight.MachineLearning {
 
             var resultprediction = predictionFunction.Predict(statement);
 
-            Console.WriteLine("---- Prediction of " + _datasetName + " model ----");
+            Console.WriteLine("-------- Prediction of " + _datasetName + " model --------");
             Console.WriteLine("Query: " + resultprediction.Content
                 + " | Prediction (" + _datasetName + "): " + Convert.ToBoolean(resultprediction.Prediction) 
                 + " | Probability: " + resultprediction.Probability);
 
-            Console.WriteLine("---------------------------------------------------");
+            Console.WriteLine("----------------------------------------------------");
             Console.WriteLine();
         }
     }
