@@ -27,13 +27,13 @@ namespace Starlight.MachineLearning {
             
         }
 
-        public void Classify(string query) {
+        public Intent Classify(string query) {
 
             
             ClassificationData statement = new ClassificationData {
                 Content = query
             };
-            PredictSingleItem(statement);
+            return PredictSingleItem(statement);
         }
 
         ITransformer BuildAndTrainModel(IDataView splitTrainSet) {
@@ -66,12 +66,17 @@ namespace Starlight.MachineLearning {
             return splitDataView;
         }
 
-        void PredictSingleItem(ClassificationData statement) {
+        Intent PredictSingleItem(ClassificationData statement) {
 
             PredictionEngine<ClassificationData, ClassificationPrediction> predictionFunction =
                 _mlContext.Model.CreatePredictionEngine<ClassificationData, ClassificationPrediction>(_model);
+            
 
             var resultprediction = predictionFunction.Predict(statement);
+
+            Intent intent = new Intent();
+            intent.Name = _datasetName;
+            intent.Score = resultprediction.Probability;
 
             Console.WriteLine("-------- Prediction of " + _datasetName + " model --------");
             Console.WriteLine("Query: " + resultprediction.Content
@@ -80,6 +85,8 @@ namespace Starlight.MachineLearning {
 
             Console.WriteLine("----------------------------------------------------");
             Console.WriteLine();
+
+            return intent;
         }
     }
 }

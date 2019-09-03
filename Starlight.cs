@@ -10,6 +10,7 @@ namespace Starlight {
                 Console.WriteLine("Enter an utterance:");
                 Console.Write("> ");
                 cc.Cognize(Console.ReadLine());
+                Console.WriteLine(cc.GetOutput());
             }
         }
     }

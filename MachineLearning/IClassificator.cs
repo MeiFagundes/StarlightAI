@@ -7,6 +7,6 @@ using static Microsoft.ML.DataOperationsCatalog;
 namespace Starlight.MachineLearning {
     interface IClassificator {
 
-        void Classify(string query);
+        Intent Classify(string query);
     }
 }
