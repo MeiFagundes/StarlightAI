@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using Newtonsoft.Json.Linq;
 using Starlight.MachineLearning;
 
@@ -10,7 +11,6 @@ namespace Starlight {
         static readonly string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset");
         static List<string> _intentList;
         List<BinaryClassificator> _binaryClassificators;
-        Utterance _utterance;
 
         public ClassificationController() {
 
@@ -25,14 +25,15 @@ namespace Starlight {
         }
 
         
-        public void Cognize(string query) {
+        public String Cognize(string query) {
 
-            Console.WriteLine("\n=============== Starlight ML Cognition ===============\n");
-            _utterance = new Utterance();
-            _utterance.Query = query;
+            Utterance utterance = new Utterance();
+            utterance.Query = query;
 
             for (int i = 0; i < _intentList.Count; i++)
-                _utterance.Intents.Add(_binaryClassificators[i].Classify(query));
+                utterance.Intents.Add(_binaryClassificators[i].Classify(query));
+
+            return getJSON(utterance);
 
         }
 
@@ -47,14 +48,24 @@ namespace Starlight {
             return _intentList;
         }
 
-        public String GetOutput() {
+        String getJSON(Utterance utterance) {
 
-            JObject rss =
+            JObject json =
                 new JObject(
-                    new JProperty("query", _utterance.Query)
-                    );
+                    new JProperty("query", utterance.Query),
+                    new JProperty("intents", 
+                        new JArray(
+                            from intent in utterance.Intents
+                            orderby intent.Score descending
+                            select new JObject(
+                                new JProperty("intent", intent.Name),
+                                new JProperty("score", intent.Score)
+                            )
+                        )
+                    )
+                );
 
-            return rss.ToString();
+            return json.ToString();
         }
     }
 }

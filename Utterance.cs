@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Starlight {
-    class Utterance {
+    public class Utterance {
 
         public string Query { get; set; }
-        public List<Intent> Intents {
-            get{ Intents.Sort((x, y) => x.Score.CompareTo(y.Score));
-                return Intents;
-            }
-            set { Intents = value; } }
+        public List<Intent> Intents { get; set; }
+
+        public Utterance() {
+            Intents = new List<Intent>();
+        }
     }
 }

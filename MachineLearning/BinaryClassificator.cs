@@ -5,7 +5,7 @@ using System.IO;
 using static Microsoft.ML.DataOperationsCatalog;
 
 namespace Starlight.MachineLearning {
-    class BinaryClassificator : IClassificator {
+    class BinaryClassificator /*: IClassificator*/ {
 
         MLContext _mlContext;
         ITransformer _model;
@@ -27,13 +27,13 @@ namespace Starlight.MachineLearning {
             
         }
 
-        public Intent Classify(string query) {
+        public Intent Classify(string query, bool debug = false) {
 
             
             ClassificationData statement = new ClassificationData {
                 Content = query
             };
-            return PredictSingleItem(statement);
+            return PredictSingleItem(statement, debug);
         }
 
         ITransformer BuildAndTrainModel(IDataView splitTrainSet) {
@@ -66,7 +66,7 @@ namespace Starlight.MachineLearning {
             return splitDataView;
         }
 
-        Intent PredictSingleItem(ClassificationData statement) {
+        Intent PredictSingleItem(ClassificationData statement, bool debug = false) {
 
             PredictionEngine<ClassificationData, ClassificationPrediction> predictionFunction =
                 _mlContext.Model.CreatePredictionEngine<ClassificationData, ClassificationPrediction>(_model);
@@ -78,13 +78,15 @@ namespace Starlight.MachineLearning {
             intent.Name = _datasetName;
             intent.Score = resultprediction.Probability;
 
-            Console.WriteLine("-------- Prediction of " + _datasetName + " model --------");
-            Console.WriteLine("Query: " + resultprediction.Content
-                + " | Prediction (" + _datasetName + "): " + Convert.ToBoolean(resultprediction.Prediction) 
-                + " | Probability: " + resultprediction.Probability);
+            if (debug) {
+                Console.WriteLine("-------- Prediction of " + _datasetName + " model --------");
+                Console.WriteLine("Query: " + resultprediction.Content
+                    + " | Prediction (" + _datasetName + "): " + Convert.ToBoolean(resultprediction.Prediction)
+                    + " | Probability: " + resultprediction.Probability);
 
-            Console.WriteLine("----------------------------------------------------");
-            Console.WriteLine();
+                Console.WriteLine("----------------------------------------------------");
+                Console.WriteLine();
+            }
 
             return intent;
         }
