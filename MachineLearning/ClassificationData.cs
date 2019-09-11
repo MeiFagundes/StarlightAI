@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Starlight.MachineLearning {
-    class ClassificationData {
+    public class ClassificationData {
 
         [LoadColumn(0), ColumnName("Label")]
         public bool Classification;

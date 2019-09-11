@@ -10,15 +10,27 @@ namespace Starlight.MachineLearning {
         MLContext _mlContext;
         ITransformer _model;
         readonly string _datasetName;
+        IDataView _dataView;
 
         public BinaryClassificator(string datasetName, bool hasHeader) {
 
-            Console.WriteLine("-------- Building " + datasetName + " Dataset Object --------");
+            Console.WriteLine("------------- Building " + datasetName + " Dataset Object ------------");
             _mlContext = new MLContext();
             _datasetName = datasetName;
             string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset", _datasetName + ".txt");
             TrainTestData splitDataView = LoadData(datasetPath, hasHeader);
-            _model = BuildAndTrainModel(splitDataView.TrainSet);
+
+            _model = ModelPersistenceIO.LoadModel(_mlContext, datasetName, _dataView.Schema);
+
+            if (_model == null) {
+                
+                _model = BuildAndTrainModel(splitDataView.TrainSet);
+                ModelPersistenceIO.SaveModel(_mlContext, datasetName, _model, _dataView.Schema);
+            }
+            else {
+                Console.WriteLine("Model Cache found! Opening...");
+            }
+
             Evaluate(splitDataView.TestSet);
             Console.WriteLine("----------------------------------------------------\n");
         }
@@ -60,9 +72,9 @@ namespace Starlight.MachineLearning {
 
         TrainTestData LoadData(String datasetPath, bool hasHeader) {
 
-            IDataView dataView = _mlContext.Data.LoadFromTextFile<ClassificationData>(datasetPath, hasHeader: hasHeader);
+            _dataView = _mlContext.Data.LoadFromTextFile<ClassificationData>(datasetPath, hasHeader: hasHeader);
             // testFraction -> Percentage of phrases compared | Default: 10%
-            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(dataView, testFraction: 0.9);
+            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(_dataView, testFraction: 0.9);
             return splitDataView;
         }
 
