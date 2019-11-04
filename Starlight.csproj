@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
     <ApplicationIcon />
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <StartupObject></StartupObject>
   </PropertyGroup>
 

@@ -12,14 +12,16 @@ namespace Starlight {
         static List<string> _intentList;
         List<BinaryClassificator> _binaryClassificators;
 
-        public ClassificationController() {
+        public ClassificationController(bool debug = false) {
 
             _binaryClassificators = new List<BinaryClassificator>();
+
+            if (debug)
             Console.WriteLine("=============== Starlight ML Cognition Build ===============\n");
 
             foreach (var intentName in GetIntentList()) {
 
-                _binaryClassificators.Add(new BinaryClassificator(intentName, false));
+                _binaryClassificators.Add(new BinaryClassificator(intentName, debug));
                 
             }
         }
