@@ -12,8 +12,9 @@ namespace Starlight.MachineLearning {
         readonly string _datasetName;
         IDataView _dataView;
 
-        public BinaryClassificator(string datasetName, bool hasHeader) {
+        public BinaryClassificator(string datasetName, bool hasHeader, bool debug = false) {
 
+            if (debug)
             Console.WriteLine("------------- Building " + datasetName + " Dataset Object ------------");
             _mlContext = new MLContext();
             _datasetName = datasetName;
@@ -22,17 +23,20 @@ namespace Starlight.MachineLearning {
 
             _model = ModelPersistenceIO.LoadModel(_mlContext, datasetName, _dataView.Schema);
 
-            if (_model == null) {
+            // Disabling cache for now
+            if (/*_model == null*/ true) {
                 
-                _model = BuildAndTrainModel(splitDataView.TrainSet);
+                _model = BuildAndTrainModel(splitDataView.TrainSet, debug);
                 ModelPersistenceIO.SaveModel(_mlContext, datasetName, _model, _dataView.Schema);
             }
             else {
-                Console.WriteLine("Model Cache found! Opening...");
+                if (debug)
+                    Console.WriteLine("Model Cache found! Opening...");
             }
 
-            Evaluate(splitDataView.TestSet);
-            Console.WriteLine("----------------------------------------------------\n");
+            Evaluate(splitDataView.TestSet, debug);
+            if (debug)
+                Console.WriteLine("----------------------------------------------------\n");
         }
 
         public BinaryClassificator(string datasetName) : this(datasetName, false) {
@@ -48,26 +52,30 @@ namespace Starlight.MachineLearning {
             return PredictSingleItem(statement, debug);
         }
 
-        ITransformer BuildAndTrainModel(IDataView splitTrainSet) {
+        ITransformer BuildAndTrainModel(IDataView splitTrainSet, bool debug = false) {
 
             // converts the text column into a numeric key type column used by the machine learning algorithm and adds it as a new dataset column:
             var estimator = _mlContext.Transforms.Text.FeaturizeText(outputColumnName: "Features", inputColumnName: nameof(ClassificationData.Content))
                 .Append(_mlContext.BinaryClassification.Trainers.SdcaLogisticRegression(labelColumnName: "Label", featureColumnName: "Features"));
 
             // Training model
-            Console.WriteLine("Building and training " + _datasetName + " model...");
+            if (debug)
+                Console.WriteLine("Building and training " + _datasetName + " model...");
             return estimator.Fit(splitTrainSet);
         }
 
-        void Evaluate(IDataView splitTestSet) {
+        void Evaluate(IDataView splitTestSet, bool debug = false) {
 
-            Console.WriteLine("Evaluating Model accuracy with Dataset");
+            if (debug)
+                Console.WriteLine("Evaluating Model accuracy with Dataset");
             IDataView predictions = _model.Transform(splitTestSet);
             CalibratedBinaryClassificationMetrics metrics = _mlContext.BinaryClassification.Evaluate(predictions, "Label");
 
-            Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
-            Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
-            Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
+            if (debug) {
+                Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
+                Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
+                Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
+            }
         }
 
         TrainTestData LoadData(String datasetPath, bool hasHeader) {
