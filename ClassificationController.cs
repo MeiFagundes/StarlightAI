@@ -25,7 +25,7 @@ namespace Starlight {
         }
 
         
-        public String Cognize(string query) {
+        public JObject Cognize(string query) {
 
             Utterance utterance = new Utterance();
             utterance.Query = query;
@@ -48,7 +48,7 @@ namespace Starlight {
             return _intentList;
         }
 
-        String getJSON(Utterance utterance) {
+        JObject getJSON(Utterance utterance) {
 
             JObject json =
                 new JObject(
@@ -65,7 +65,7 @@ namespace Starlight {
                     )
                 );
 
-            return json.ToString();
+            return json;
         }
     }
 }
