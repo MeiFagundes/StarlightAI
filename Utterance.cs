@@ -7,9 +7,11 @@ namespace Starlight {
 
         public string Query { get; set; }
         public List<Intent> Intents { get; set; }
+        public Entity Entity { get; set; }
 
         public Utterance() {
             Intents = new List<Intent>();
+            Entity = new Entity();
         }
     }
 }

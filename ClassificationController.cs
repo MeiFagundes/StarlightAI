@@ -35,6 +35,8 @@ namespace Starlight {
             for (int i = 0; i < _intentList.Count; i++)
                 utterance.Intents.Add(_binaryClassificators[i].Classify(query));
 
+            EntityExtraction.addReminder.Fetch(utterance);
+
             return getJSON(utterance);
 
         }
@@ -66,6 +68,18 @@ namespace Starlight {
                         )
                     )
                 );
+
+            if (utterance.Entity != null) {
+                json.Add(new JProperty("entities",
+                    new JObject(
+                        new JProperty("entity", utterance.Entity.EntityText),
+                        new JProperty("type", utterance.Entity.Type),
+                        new JProperty("startIndex", utterance.Entity.startIndex),
+                        new JProperty("endIndex", utterance.Entity.endIndex)
+                        )
+                    )
+                );
+            }
 
             return json;
         }

@@ -24,7 +24,7 @@ namespace Starlight.MachineLearning {
             _model = ModelPersistenceIO.LoadModel(_mlContext, datasetName, _dataView.Schema);
 
             // Disabling cache for now
-            if (/*_model == null*/ true) {
+            if (_model == null/*true*/) {
                 
                 _model = BuildAndTrainModel(splitDataView.TrainSet, debug);
                 ModelPersistenceIO.SaveModel(_mlContext, datasetName, _model, _dataView.Schema);
