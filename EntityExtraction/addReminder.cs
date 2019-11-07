@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Starlight.EntityExtraction {
-    public class addReminder {
+    public class AddReminder {
 
         public static void Fetch(Utterance u) {
 
@@ -35,10 +34,8 @@ namespace Starlight.EntityExtraction {
 
             if (u.Entity.EntityText != String.Empty && u.Entity.EntityText != null) {
                 u.Entity.Type = "reminder";
-                u.Entity.startIndex = (Byte) u.Query.IndexOf(entityTextArray[0]);
-                u.Entity.endIndex = (Byte) (u.Entity.EntityText.Length - 1);
+                Util.EntityUtil.SetEntityIndexes(u, entityTextArray[0]);
             }
         }
-
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Starlight.Util {
@@ -10,6 +11,11 @@ namespace Starlight.Util {
 
         public static string[] GetEntityTextArray(List<String> textList, string referenceString, int offset) {
             return textList.GetRange(textList.IndexOf(referenceString) + offset, textList.Count - textList.IndexOf(referenceString) - offset).ToArray();
+        }
+
+        public static void SetEntityIndexes(Utterance u, String entity) {
+            u.Entity.startIndex = (Byte)u.Query.IndexOf(entity);
+            u.Entity.endIndex = (Byte)(u.Query.Count() - 1);
         }
     }
 }
