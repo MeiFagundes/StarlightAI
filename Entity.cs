@@ -5,8 +5,8 @@ using System.Text;
 namespace Starlight {
     public class Entity {
 
-        public string EntityText { get; set; }
-        public string Type { get; set; }
+        public String EntityText { get; set; }
+        public String Type { get; set; }
         public Byte startIndex { get; set; }
         public Byte endIndex { get; set; }
 

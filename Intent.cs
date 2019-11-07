@@ -5,7 +5,7 @@ using System.Text;
 namespace Starlight {
     public class Intent {
 
-        public string Name { get; set; }
+        public String Name { get; set; }
         public float Score { get; set; }
 
         public Intent() { }
