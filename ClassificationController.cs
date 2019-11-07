@@ -35,7 +35,7 @@ namespace Starlight {
             for (int i = 0; i < _intentList.Count; i++)
                 utterance.Intents.Add(_binaryClassificators[i].Classify(query));
 
-            EntityExtraction.addReminder.Fetch(utterance);
+            EntityExtraction.EntityExtractorController.Fetch(utterance);
 
             return getJSON(utterance);
 
