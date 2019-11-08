@@ -17,7 +17,7 @@ namespace Starlight {
             _binaryClassificators = new List<BinaryClassificator>();
 
             if (debug)
-            Console.WriteLine("=============== Starlight ML Cognition Build ===============\n");
+                Console.WriteLine("=============== Starlight Build ===============\n");
 
             foreach (var intentName in GetIntentList()) {
 
