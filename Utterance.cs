@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Starlight {
@@ -40,6 +42,42 @@ namespace Starlight {
             }
 
             return topScoringIntent;
+        }
+
+        public JObject GetResponse() {
+
+            JObject json =
+                new JObject(
+                    new JProperty("query", Query),
+                    new JProperty("intents",
+                        new JArray(
+                            (from intent in Intents
+                             orderby intent.Score descending
+                             select new JObject(
+                                 new JProperty("intent", intent.Name),
+                                 new JProperty("score", intent.Score)
+                             )).Take(3)
+                        )
+                    )
+                );
+
+            DateTime dateTime = Entity.DateTime;
+
+            if (Entity != null) {
+                json.Add(new JProperty("entities",
+                    new JObject(
+                        new JProperty("entity", Entity.EntityText),
+                        new JProperty("type", Entity.Type),
+                        new JProperty("startIndex", Entity.StartIndex),
+                        new JProperty("endIndex", Entity.EndIndex),
+                        new JProperty("date", dateTime == null ? null : dateTime.ToString("yyyy-MM-dd")),
+                        new JProperty("time", dateTime == null ? null : dateTime.ToString("hh:mm tt"))
+                        )
+                    )
+                );
+            }
+
+            return json;
         }
     }
 }
