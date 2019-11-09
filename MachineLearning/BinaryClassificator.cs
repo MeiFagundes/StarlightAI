@@ -12,13 +12,19 @@ namespace Starlight.MachineLearning {
         readonly string _datasetName;
         IDataView _dataView;
 
-        public BinaryClassificator(string datasetName, bool hasHeader, bool debug = false) {
+        public BinaryClassificator(string datasetName, string datasetPath, bool hasHeader, bool debug = false) {
 
             if (debug)
             Console.WriteLine("------------- Building " + datasetName + " Dataset Object ------------");
             _mlContext = new MLContext();
             _datasetName = datasetName;
-            string datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset", _datasetName + ".txt");
+
+
+            if (datasetPath == null)
+                datasetPath = Path.Combine(Environment.CurrentDirectory, "Dataset", _datasetName + ".txt");
+            else
+                datasetPath = Path.Combine(datasetPath, _datasetName + ".txt");
+
             TrainTestData splitDataView = LoadData(datasetPath, hasHeader);
 
             _model = ModelPersistenceIO.LoadModel(_mlContext, datasetName, _dataView.Schema);
@@ -39,7 +45,7 @@ namespace Starlight.MachineLearning {
                 Console.WriteLine("----------------------------------------------------\n");
         }
 
-        public BinaryClassificator(string datasetName) : this(datasetName, false) {
+        public BinaryClassificator(string datasetName, string datasetPath) : this(datasetName, datasetPath, false) {
             
         }
 
