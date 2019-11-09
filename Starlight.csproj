@@ -23,8 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Dataset\addAlarm.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Dataset\addReminder.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Dataset\none.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Dataset\showNews.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

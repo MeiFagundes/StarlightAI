@@ -12,18 +12,15 @@ namespace Starlight {
         static List<string> _intentList;
         List<BinaryClassificator> _binaryClassificators;
 
-        public ClassificationController(bool debug = false) {
+        public ClassificationController(string datasetpath = null, bool debug = false) {
 
             _binaryClassificators = new List<BinaryClassificator>();
 
             if (debug)
                 Console.WriteLine("=============== Starlight Build ===============\n");
 
-            foreach (var intentName in GetIntentList()) {
-
-                _binaryClassificators.Add(new BinaryClassificator(intentName, debug));
-                
-            }
+            foreach (var intentName in GetIntentList())
+                _binaryClassificators.Add(new BinaryClassificator(intentName, datasetpath, false, debug));
         }
 
         
@@ -37,7 +34,7 @@ namespace Starlight {
 
             EntityExtraction.EntityExtractorController.Fetch(utterance);
 
-            return getJSON(utterance);
+            return utterance.GetResponse();
 
         }
 
@@ -50,38 +47,6 @@ namespace Starlight {
                 _intentList.Add(file.Name.Replace(".txt", string.Empty));
             }
             return _intentList;
-        }
-
-        JObject getJSON(Utterance utterance) {
-
-            JObject json =
-                new JObject(
-                    new JProperty("query", utterance.Query),
-                    new JProperty("intents", 
-                        new JArray(
-                            from intent in utterance.Intents
-                            orderby intent.Score descending
-                            select new JObject(
-                                new JProperty("intent", intent.Name),
-                                new JProperty("score", intent.Score)
-                            )
-                        )
-                    )
-                );
-
-            if (utterance.Entity != null) {
-                json.Add(new JProperty("entities",
-                    new JObject(
-                        new JProperty("entity", utterance.Entity.EntityText),
-                        new JProperty("type", utterance.Entity.Type),
-                        new JProperty("startIndex", utterance.Entity.startIndex),
-                        new JProperty("endIndex", utterance.Entity.endIndex)
-                        )
-                    )
-                );
-            }
-
-            return json;
         }
     }
 }

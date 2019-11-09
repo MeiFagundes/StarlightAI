@@ -4,27 +4,37 @@
 
 Example:
 
-**Query:** *Remind me to work on my project tomorrow*
+**Query:** *Wake me up at 10:30 AM* 
+
+**Current date/time:** 9-nov-2019 01:13 PM
 
 **Output:**
 
 ```
 {
-  "query": "Remind me to work on my project tomorrow",
+  "query": "wake me up at 10:30",
   "intents": [
     {
-      "intent": "addReminder",
-      "score": 0.9951776
+      "intent": "addAlarm",
+      "score": 0.93108803
     },
     {
       "intent": "showWeather",
-      "score": 0.477052838
+      "score": 0.5757521
     },
     {
-      "intent": "showNews",
-      "score": 0.008260157
+      "intent": "addReminder",
+      "score": 0.26036647
     }
-  ]
+  ],
+  "entities": {
+    "entity": "tomorrow",
+    "type": "date",
+    "startIndex": 14,
+    "endIndex": 18,
+    "date": "2019-11-10",
+    "time": "10:30 AM"
+  }
 }
 ```
 
