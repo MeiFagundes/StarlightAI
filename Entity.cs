@@ -7,8 +7,9 @@ namespace Starlight {
 
         public String EntityText { get; set; }
         public String Type { get; set; }
-        public Byte startIndex { get; set; }
-        public Byte endIndex { get; set; }
+        public Byte StartIndex { get; set; }
+        public Byte EndIndex { get; set; }
+        public DateTime DateTime { get; set; }
 
         public Entity() {
 

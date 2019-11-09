@@ -14,8 +14,8 @@ namespace Starlight.Util {
         }
 
         public static void SetEntityIndexes(Utterance u, String entity) {
-            u.Entity.startIndex = (Byte)u.Query.IndexOf(entity);
-            u.Entity.endIndex = (Byte)(u.Query.Count() - 1);
+            u.Entity.StartIndex = (Byte)u.Query.IndexOf(entity);
+            u.Entity.EndIndex = (Byte)(u.Query.Count() - 1);
         }
     }
 }
