@@ -6,10 +6,25 @@
 1	What is happening today
 1	What happened then
 1	what's going on in the news today
+1	how are things in my city
+1	show me breaking news
+1	show me the announcements
+1	are there new notices in the newspaper
+1	i want to know new information
+1	show me recent events
+1	show me important events
+1	is something making the news
+1	whats is going on today
+1	did anything happened recently
+1	I would like to know the recents events
+1	I would like to know the news
+1	show me new information
+1	news
+1	is there any bad thing happening
 0	i don't like the bad news recently
-0	show weather
-0	show climate
-0	show temperature
+0	Show weather
+0	Show climate
+0	Show temperature
 0	What is today's weather
 0	What is today's climate
 0	What is today's temperature
@@ -58,3 +73,32 @@
 0	i don't like the weather today
 0	remind me to take my coat with me tomorrow
 0	remind me that it's going to rain tomorrow
+0	don't show me the news
+0	i don't want to know the news
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework
+0	add a reminder for tomorrow
+0	don't let me forget to do my homework
+0	i don't want to forget about my lessons
+0	i can't forget to take my medication tomorrow
+0	i didn't remember about my coding today
+0	i wish i could remember the important things in my life

@@ -3,8 +3,83 @@
 1	i want to remember about my lessons later today
 1	remind me to do my homework
 1	add a reminder for tomorrow
+1	don't let me forget to do my homework
+1	i don't want to forget about my lessons
+1	i can't forget to take my medication tomorrow
+1	add a reminder
+1	add an event
+1	add a refresher
+1	help me remember this
+1	i want to be reminded to set family tasks
+1	i want to be reminded to play overwatch with friends
+1	i want to be reminded to log in to fortnite
+1	I want to be reminded to brush my teeth
+1	I want to be reminded to finish my report
+1	I want to be reminded to file those bug reports
+1	I want to be reminded to play baseball with the brothers
+1	i want to be reminded to clean the sheets
+1	i want to be reminded to feed all animals
+1	I want to be reminded to file taxes
+1	i want to be reminded to finish seasoning the steaks
+1	i want to be reminded to finish setting devices up
+1	i want to be reminded to finish interview questions
+1	i want to be reminded to complete the build
+1	i want to be reminded to finish reviewing candidates
+1	i don't want to forget to eat my lunch
+1	i don't want to forget to feed the animals
+1	i don't want to forget to draft my fantasy team
+1	I don't want to forget to bake that cake for the party
+1	i don't want to forget to grab a quick nap before driving
+1	I don't want to forget to watch Sunday Night Football
+1	I don't want to forget to watch Saturday Night Live
+1	I don't want to forget to watch the latest press conference
+1	I don't watch to forget to call the president
+1	i don't want to forget to file the bug reports
+1	I don't want to forget to listen to the latest
+1	i don't want to forget to cook lunch for the Martins
+1	I don't want to forget to charge my laptop
+1	I don't want to forget to update the spreadsheets
+1	I don't want to forget to assign family tasks
+1	I want to be reminded to file tax
+1	I want to be reminded to take out the trash
+1	I want to be reminded to cook dinner
+1	I want to be reminded to go to the store
+1	I want to be reminded to watch the game tonight
+1	I want to be reminded to call dad
+1	I want to be reminded to go to the doctor
+1	I want to be reminded to go early to spin class
+1	I want to be reminded to wash dog
+1	I want to be reminded to make dinner early
+1	I want to be reminded to call my therapist
+1	I want to be reminded to charge electronic devices
+1	I want to be reminded to go take a nap
+1	I want to be reminded to help my daughter with homework
+1	I don't want to forget to file taxes
+1	I can't forget to file taxes
+1	Don't let me forget to file taxes
+1	Please do not let me forget to file taxes
+1	I cannot forget to file taxes
+1	I really don't want to forget to file taxes
+1	I really can't forget to file taxes
+1	I don't want to forget to wash the dog
+1	I don't want to forget to take out the trash
+1	I don't want to forget to clean my car
+1	I don't want to forget to go to work
+1	i don't want to forget to go to band practice
+1	I don't want to forget my hair appointment
+1	I don't want to forget to feed to fish
+1	I don't want to forget to drive to dad's house
+1	I don't want to forget to text my girlfriend about dinner
+1	I don't want to forget to pay the bills
+1	I don't want to forget to email my boss about the tests
+1	I don't want to forget to color my hair
+1	I don't want to forget to charge my phone
+1	I don't want to forget to pack my laptop
+1	I don't want to forget to change the fish tank
+1	I don't want to forget to grab the books
+1	I don't want to forget to clean the bathroom
 0	i didn't remember about my coding today
-0	i wish i cold remember the important things in my life
+0	i wish i could remember the important things in my life
 0	i don't like the bad news recently
 0	Show weather
 0	Show climate
@@ -55,3 +130,23 @@
 0	Is it a beautiful day for a walk
 0	What’s the weather forecast
 0	i don't like the weather today
+0	what is going on today
+0	did anything happened recently
+0	I would like to know the recents events
+0	I would like to know the news
+0	show me new information
+0	news
+0	is there any bad thing happening
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella

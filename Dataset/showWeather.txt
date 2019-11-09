@@ -23,7 +23,7 @@
 1	Is it hot today
 1	Is it going to be sweltering 
 1	Is it going to be warm 
-1	Is it going to be clear 
+1	Is it going to be clear
 1	Is it going to be misty 
 1	Is it going to be breezy
 1	Is it going to be showery
@@ -45,7 +45,62 @@
 1	How's it like outside
 1	Do you have rain
 1	Is it a beautiful day for a walk
-1	What’s the weather forecast
+1	Whatï¿½s the weather forecast
+1	is it raining
+1	weather forecast
+1	show me the forecast
+1	what is the forecast
+1	today's national weather forecast
+1	show forecast
+1	is the forecast good
+1	do I need an umbrella
+1	tell me the weather report
+1	give me the latest forecast
+1	give me friday's forecast
+1	Do you have thursday's weather report
+1	Give me most recent forecast
+1	i need the weather report for sunday
+1	give me your most recent weather report
+1	Tuesday weather forecast
+1	is monday to be sunny
+1	is tuesday to be sunny
+1	is wednesday to be sunny
+1	is thursday to be sunny
+1	is friday to be sunny
+1	is saturday to be sunny
+1	is sunday to be sunny
+1	is monday to be cloudy
+1	is tuesday to be cloudy
+1	is wednesday to be cloudy
+1	is friday to be cloudy
+1	is thursday to be cloudy
+1	is saturday to be cloudy
+1	is sunday to be cloudy
+1	is monday to be rainy
+1	is tuesday to be rainy
+1	is wednesday to be rainy
+1	is friday to be rainy
+1	is thursday to be rainy
+1	is there rain today
+1	is there sun today
+1	are there clouds today
+1	is it hot today?
+1	is there wind today?
+1	is there snow today?
+1	is there humidity right
+1	is there heat today
+1	are there rain clouds today
+1	are there ice storms today
+1	is tomorrow to be sunny
+1	is tomorrow to be cloudy
+1	is thursday to be rainy
+1	is friday to be storming
+1	is Friday to be hot
+1	is Tuesday to be clear
+1	Is Saturday to be humid
+1	is Monday to be snowy
+1	is Sunday to have sun
+1	is tomorrow to have ice
 0	i don't like the weather today
 0	remind me to take my coat with me tomorrow
 0	remind me that it's going to rain tomorrow
@@ -59,3 +114,12 @@
 0	can you remind me about my medication tomorrow
 0	i want to remember about my lessons later today
 0	remind me to do my homework
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
