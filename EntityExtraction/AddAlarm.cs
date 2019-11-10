@@ -11,6 +11,7 @@ namespace Starlight.EntityExtraction {
 
 
             Match match = Regex.Match(u.Query, @"(?:(?:0?[0-9]|1[0-2]):[0-5][0-9] [ap]m|(?:[01][0-9]|2[0-3]):[0-5][0-9])", RegexOptions.IgnoreCase);
+            Console.WriteLine(match.Value);
             if (match.Success) {
 
                 Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");

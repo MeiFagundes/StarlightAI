@@ -4,7 +4,7 @@ namespace Starlight {
     public class Starlight {
         public static void Main() {
 
-            ClassificationController cc = new ClassificationController();
+            IntentClassificator cc = new IntentClassificator();
 
             while (true) {
                  Console.WriteLine("Enter an utterance:");

@@ -61,8 +61,6 @@ namespace Starlight {
                     )
                 );
 
-            DateTime dateTime = Entity.DateTime;
-
             if (Entity != null) {
                 json.Add(new JProperty("entities",
                     new JObject(
@@ -70,8 +68,8 @@ namespace Starlight {
                         new JProperty("type", Entity.Type),
                         new JProperty("startIndex", Entity.StartIndex),
                         new JProperty("endIndex", Entity.EndIndex),
-                        new JProperty("date", dateTime == null ? null : dateTime.ToString("yyyy-MM-dd")),
-                        new JProperty("time", dateTime == null ? null : dateTime.ToString("hh:mm tt"))
+                        new JProperty("date", Entity.DateTime?.ToString("yyyy-MM-dd")),
+                        new JProperty("time", Entity.DateTime?.ToString("hh:mm tt"))
                         )
                     )
                 );
