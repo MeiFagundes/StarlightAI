@@ -21,6 +21,8 @@
 1	show me new information
 1	news
 1	is there any bad thing happening
+1	yo what's new today?
+1	anything new today?
 0	i don't like the bad news recently
 0	Show weather
 0	Show climate

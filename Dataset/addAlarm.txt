@@ -7,20 +7,19 @@
 1	Don't let me sleep past 3 p.m.
 1	I will sleep until 7 a.m.
 1	I have to be up at 9 a.m.
-1	I can't sleep past 8 a.m.
+1	I can't sleep past 8 am
 1	I have to take my cake off the oven in 45 minutes
-1	Add a timer for 9 p.m.
-1	Set a periodic alarm for 8 p.m.
-1	Add an everyday alarm for 8 p.m.
-1	Wake me up at 10 a.m. everyday
-1	
-1
-1
-1
-1
-1
-1
-1
+1	Add a timer for 9 pm
+1	Set a periodic alarm for 8 pm
+1	Add an everyday alarm for 8 pm
+1	Wake me up at 10 am everyday
+1	i gotta go to the doctor tomorrow, set an alarm to 10 pm
+1	i want to wake up at 13:10 pm
+1	i need to wake up at 13:10 pm
+1	add alarm for 10:30 am
+1	add alarm for 20:30
+1	add an alarm for 11:30 pm
+1	please add an alarm for 10:30 am
 0	Show weather
 0	Show climate
 0	Show temperature
