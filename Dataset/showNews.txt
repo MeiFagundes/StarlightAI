@@ -1,8 +1,15 @@
-1	Show the news
+1	show the news
+1	show me the news
+1	show me the news
+1	show me the news
+1	show me the news
 1	show news
+1	show today's news
+1	show today's news
 1	show today's news
 1	Show new information
 1	are there any news
+1	What is happening today
 1	What is happening today
 1	What happened then
 1	what's going on in the news today

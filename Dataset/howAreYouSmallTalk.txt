@@ -1,9 +1,26 @@
 1	How are you
+1	How are you
+1	How are you
+1	How are you
+1	How are you
 1	How you doing
+1	How are you doing
 1	Hey there
 1	Howdy
 1	What's up
 1	What's going on
+1	How are you
+1	How you doing
+1	Hey there
+1	Howdy
+1	What's up
+1	What's up
+1	What's up
+1	What's up
+1	What's going on
+1	how r u
+1	how r you
+1	how are u
 0	Where are you
 0	What are you
 0	Who are you

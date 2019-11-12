@@ -1,4 +1,8 @@
 1	Show weather
+1	Show weather
+1	Show weather
+1	Show weather
+1	What's the weather
 1	Show climate
 1	Show temperature
 1	What is today's weather

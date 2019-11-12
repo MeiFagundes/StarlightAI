@@ -1,8 +1,14 @@
 1	Do you know Google Assistant
+1	Do you know Google Assistant
+1	What do you think about Google Assistant
 1	What do you think about Google Assistant
 1	Do you know Siri
+1	Do you know Siri
+1	What do you think about Siri
 1	What do you think about Siri
 1	Do you know Cortana
+1	Do you know Cortana
+1	What do you think about Cortana
 1	What do you think about Cortana
 0	Who are you
 0	Who the hell are you

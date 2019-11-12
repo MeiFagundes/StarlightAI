@@ -64,7 +64,6 @@ namespace Starlight.MachineLearning {
             var estimator = _mlContext.Transforms.Text.FeaturizeText(outputColumnName: "Features", inputColumnName: nameof(ClassificationData.Content))
                 .Append(_mlContext.BinaryClassification.Trainers.SdcaLogisticRegression(labelColumnName: "Label", featureColumnName: "Features"));
 
-            Console.WriteLine("build" + _datasetName);
             // Training model
             if (debug)
                 Console.WriteLine("Building and training " + _datasetName + " model...");
@@ -89,7 +88,8 @@ namespace Starlight.MachineLearning {
             }
             catch (ArgumentOutOfRangeException) {
 
-                Console.WriteLine("Test fraction percentage too low to evaluate.");
+                if (debug)
+                    Console.WriteLine("Test fraction percentage too low to evaluate.");
             }
         }
 
@@ -97,7 +97,7 @@ namespace Starlight.MachineLearning {
 
             _dataView = _mlContext.Data.LoadFromTextFile<ClassificationData>(datasetPath, hasHeader: hasHeader);
             // testFraction -> Percentage of phrases compared | Default: 10%
-            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(_dataView, testFraction: 0.1);
+            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(_dataView, testFraction: 0.00000001);
             return splitDataView;
         }
 

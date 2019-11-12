@@ -1,0 +1,630 @@
+1	What do you do
+1	In your free time, what do you do
+1	What do you like to do
+1	How is your everyday life
+1	How are you
+1	How you doing
+1	Hey there
+1	Howdy
+1	What's up
+1	What's going on
+0	Where are you
+0	What are you
+0	Who are you
+0	Show weather
+0	Show climate
+0	Show temperature
+0	What is today's weather
+0	What is today's climate
+0	What is today's temperature
+0	How is today's weather
+0	How is today's climate
+0	How is today's temperature
+0	Is it going to rain
+0	Is it going to be sunny
+0	Is it going to be cloudy
+0	Will it rain today
+0	Will it be rainy today
+0	Will it be cloudy today
+0	Is today going to have a good weather
+0	Is today going to have a good climate
+0	Is today going to have a good temperature
+0	Should I get an umbrella
+0	Should I get an jacket
+0	May I get a cold if I go out today
+0	Is it cold today
+0	Is it hot today
+0	Is it going to be sweltering 
+0	Is it going to be warm 
+0	Is it going to be clear
+0	Is it going to be misty 
+0	Is it going to be breezy
+0	Is it going to be showery
+0	Is it going to be frosty 
+0	Is it going to be icy
+0	Is it going to be dry
+0	Is it going to be freezing
+0	Is it going to be cold
+0	Is it going to be cloudy
+0	Is it going to be stormy
+0	Is it going to be foggy
+0	Is it going to be snowy
+0	Is it going to be drizzly
+0	Is it pouring down
+0	Is it raining cats and dogs
+0	Is it thundering and lightining
+0	Is the wind blowing
+0	What's it like outside
+0	How's it like outside
+0	Do you have rain
+0	Is it a beautiful day for a walk
+0	What's the weather forecast
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella
+0	tell me the weather report
+0	give me the latest forecast
+0	give me friday's forecast
+0	Do you have thursday's weather report
+0	Give me most recent forecast
+0	i need the weather report for sunday
+0	give me your most recent weather report
+0	Tuesday weather forecast
+0	is monday to be sunny
+0	is tuesday to be sunny
+0	is wednesday to be sunny
+0	is thursday to be sunny
+0	is friday to be sunny
+0	is saturday to be sunny
+0	is sunday to be sunny
+0	is monday to be cloudy
+0	is tuesday to be cloudy
+0	is wednesday to be cloudy
+0	is friday to be cloudy
+0	is thursday to be cloudy
+0	is saturday to be cloudy
+0	is sunday to be cloudy
+0	is monday to be rainy
+0	is tuesday to be rainy
+0	is wednesday to be rainy
+0	is friday to be rainy
+0	is thursday to be rainy
+0	is there rain today
+0	is there sun today
+0	are there clouds today
+0	is it hot today?
+0	is there wind today?
+0	is there snow today?
+0	is there humidity right
+0	is there heat today
+0	are there rain clouds today
+0	are there ice storms today
+0	is tomorrow to be sunny
+0	is tomorrow to be cloudy
+0	is thursday to be rainy
+0	is friday to be storming
+0	is Friday to be hot
+0	is Tuesday to be clear
+0	Is Saturday to be humid
+0	is Monday to be snowy
+0	is Sunday to have sun
+0	is tomorrow to have ice
+0	i don't like the weather today
+0	remind me to take my coat with me tomorrow
+0	remind me that it's going to rain tomorrow
+0	Show the news
+0	Show new information
+0	are there any news
+0	What is happening today
+0	What happened then
+0	what's going on in the news today
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
+0	Show the news
+0	show news
+0	show today's news
+0	Show new information
+0	are there any news
+0	What is happening today
+0	What happened then
+0	what's going on in the news today
+0	how are things in my city
+0	show me breaking news
+0	show me the announcements
+0	are there new notices in the newspaper
+0	i want to know new information
+0	show me recent events
+0	show me important events
+0	is something making the news
+0	whats is going on today
+0	did anything happened recently
+0	I would like to know the recents events
+0	I would like to know the news
+0	show me new information
+0	news
+0	is there any bad thing happening
+0	i don't like the bad news recently
+0	Show weather
+0	Show climate
+0	Show temperature
+0	What is today's weather
+0	What is today's climate
+0	What is today's temperature
+0	How is today's weather
+0	How is today's climate
+0	How is today's temperature
+0	Is it going to rain
+0	Is it going to be sunny
+0	Is it going to be cloudy
+0	Will it rain today
+0	Will it be rainy today
+0	Will it be cloudy today
+0	Is today going to have a good weather
+0	Is today going to have a good climate
+0	Is today going to have a good temperature
+0	Should I get an umbrella
+0	Should I get an jacket
+0	May I get a cold if I go out today
+0	Is it cold today
+0	Is it hot today
+0	Is it going to be sweltering 
+0	Is it going to be warm 
+0	Is it going to be clear 
+0	Is it going to be misty 
+0	Is it going to be breezy
+0	Is it going to be showery
+0	Is it going to be frosty 
+0	Is it going to be icy
+0	Is it going to be dry
+0	Is it going to be freezing
+0	Is it going to be cold
+0	Is it going to be cloudy
+0	Is it going to be stormy
+0	Is it going to be foggy
+0	Is it going to be snowy
+0	Is it going to be drizzly
+0	Is it pouring down
+0	Is it raining cats and dogs
+0	Is it thundering and lightining
+0	Is the wind blowing
+0	What's it like outside
+0	How's it like outside
+0	Do you have rain
+0	Is it a beautiful day for a walk
+0	What’s the weather forecast
+0	i don't like the weather today
+0	remind me to take my coat with me tomorrow
+0	remind me that it's going to rain tomorrow
+0	don't show me the news
+0	i don't want to know the news
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework
+0	add a reminder for tomorrow
+0	don't let me forget to do my homework
+0	i don't want to forget about my lessons
+0	i can't forget to take my medication tomorrow
+0	i didn't remember about my coding today
+0	i wish i could remember the important things in my life
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework
+0	add a reminder for tomorrow
+0	don't let me forget to do my homework
+0	i don't want to forget about my lessons
+0	i can't forget to take my medication tomorrow
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
+0	i want to be reminded to set family tasks
+0	i want to be reminded to play overwatch with friends
+0	i want to be reminded to log in to fortnite
+0	I want to be reminded to brush my teeth
+0	I want to be reminded to finish my report
+0	I want to be reminded to file those bug reports
+0	I want to be reminded to play baseball with the brothers
+0	i want to be reminded to clean the sheets
+0	i want to be reminded to feed all animals
+0	I want to be reminded to file taxes
+0	i want to be reminded to finish seasoning the steaks
+0	i want to be reminded to finish setting devices up
+0	i want to be reminded to finish interview questions
+0	i want to be reminded to complete the build
+0	i want to be reminded to finish reviewing candidates
+0	i don't want to forget to eat my lunch
+0	i don't want to forget to feed the animals
+0	i don't want to forget to draft my fantasy team
+0	I don't want to forget to bake that cake for the party
+0	i don't want to forget to grab a quick nap before driving
+0	I don't want to forget to watch Sunday Night Football
+0	I don't want to forget to watch Saturday Night Live
+0	I don't want to forget to watch the latest press conference
+0	I don't watch to forget to call the president
+0	i don't want to forget to file the bug reports
+0	I don't want to forget to listen to the latest
+0	i don't want to forget to cook lunch for the Martins
+0	I don't want to forget to charge my laptop
+0	I don't want to forget to update the spreadsheets
+0	I don't want to forget to assign family tasks
+0	I want to be reminded to file tax
+0	I want to be reminded to take out the trash
+0	I want to be reminded to cook dinner
+0	I want to be reminded to go to the store
+0	I want to be reminded to watch the game tonight
+0	I want to be reminded to call dad
+0	I want to be reminded to go to the doctor
+0	I want to be reminded to go early to spin class
+0	I want to be reminded to wash dog
+0	I want to be reminded to make dinner early
+0	I want to be reminded to call my therapist
+0	I want to be reminded to charge electronic devices
+0	I want to be reminded to go take a nap
+0	I want to be reminded to help my daughter with homework
+0	I don't want to forget to file taxes
+0	I can't forget to file taxes
+0	Don't let me forget to file taxes
+0	Please do not let me forget to file taxes
+0	I cannot forget to file taxes
+0	I really don't want to forget to file taxes
+0	I really can't forget to file taxes
+0	I don't want to forget to wash the dog
+0	I don't want to forget to take out the trash
+0	I don't want to forget to clean my car
+0	I don't want to forget to go to work
+0	i don't want to forget to go to band practice
+0	I don't want to forget my hair appointment
+0	I don't want to forget to feed to fish
+0	I don't want to forget to drive to dad's house
+0	I don't want to forget to text my girlfriend about dinner
+0	I don't want to forget to pay the bills
+0	I don't want to forget to email my boss about the tests
+0	I don't want to forget to color my hair
+0	I don't want to forget to charge my phone
+0	I don't want to forget to pack my laptop
+0	I don't want to forget to change the fish tank
+0	I don't want to forget to grab the books
+0	I don't want to forget to clean the bathroom
+0	i didn't remember about my coding today
+0	i wish i could remember the important things in my life
+0	i don't like the bad news recently
+0	Show weather
+0	Show climate
+0	Show temperature
+0	What is today's weather
+0	What is today's climate
+0	What is today's temperature
+0	How is today's weather
+0	How is today's climate
+0	How is today's temperature
+0	Is it going to rain
+0	Is it going to be sunny
+0	Is it going to be cloudy
+0	Will it rain today
+0	Will it be rainy today
+0	Will it be cloudy today
+0	Is today going to have a good weather
+0	Is today going to have a good climate
+0	Is today going to have a good temperature
+0	Should I get an umbrella
+0	Should I get an jacket
+0	May I get a cold if I go out today
+0	Is it cold today
+0	Is it hot today
+0	Is it going to be sweltering 
+0	Is it going to be warm 
+0	Is it going to be clear 
+0	Is it going to be misty 
+0	Is it going to be breezy
+0	Is it going to be showery
+0	Is it going to be frosty 
+0	Is it going to be icy
+0	Is it going to be dry
+0	Is it going to be freezing
+0	Is it going to be cold
+0	Is it going to be cloudy
+0	Is it going to be stormy
+0	Is it going to be foggy
+0	Is it going to be snowy
+0	Is it going to be drizzly
+0	Is it pouring down
+0	Is it raining cats and dogs
+0	Is it thundering and lightining
+0	Is the wind blowing
+0	What's it like outside
+0	How's it like outside
+0	Do you have rain
+0	Is it a beautiful day for a walk
+0	What’s the weather forecast
+0	i don't like the weather today
+0	what is going on today
+0	did anything happened recently
+0	I would like to know the recents events
+0	I would like to know the news
+0	show me new information
+0	news
+0	is there any bad thing happening
+0	it rained yesterday
+0	it was sunny yesterday
+0	it was cloudy yesterday
+0	I don't want to know the weather
+0	cats don't like rain
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella
+0	Set an alarm for 00 a.m.
+0	Wake me up in 20 minutes
+0	Wake me up at 3 p.m.
+0	Set a timer for 9 p.m.
+0	Wake me up on weekdays at 8 a.m.
+0	Add an alarm for 4 a.m.
+0	Don't let me sleep past 3 p.m.
+0	I will sleep until 7 a.m.
+0	I have to be up at 9 a.m.
+0	I can't sleep past 8 a.m.
+0	I have to take my cake off the oven in 45 minutes
+0	Add a timer for 9 p.m.
+0	Set a periodic alarm for 8 p.m.
+0	Add an everyday alarm for 8 p.m.
+0	Wake me up at 00 a.m. everyday
+0	Show weather
+0	Show climate
+0	Show temperature
+0	What is today's weather
+0	What is today's climate
+0	What is today's temperature
+0	How is today's weather
+0	How is today's climate
+0	How is today's temperature
+0	Is it going to rain
+0	Is it going to be sunny
+0	Is it going to be cloudy
+0	Will it rain today
+0	Will it be rainy today
+0	Will it be cloudy today
+0	Is today going to have a good weather
+0	Is today going to have a good climate
+0	Is today going to have a good temperature
+0	Should I get an umbrella
+0	Should I get an jacket
+0	May I get a cold if I go out today
+0	Is it cold today
+0	Is it hot today
+0	Is it going to be sweltering 
+0	Is it going to be warm 
+0	Is it going to be clear
+0	Is it going to be misty 
+0	Is it going to be breezy
+0	Is it going to be showery
+0	Is it going to be frosty 
+0	Is it going to be icy
+0	Is it going to be dry
+0	Is it going to be freezing
+0	Is it going to be cold
+0	Is it going to be cloudy
+0	Is it going to be stormy
+0	Is it going to be foggy
+0	Is it going to be snowy
+0	Is it going to be drizzly
+0	Is it pouring down
+0	Is it raining cats and dogs
+0	Is it thundering and lightining
+0	Is the wind blowing
+0	What's it like outside
+0	How's it like outside
+0	Do you have rain
+0	Is it a beautiful day for a walk
+0	What�s the weather forecast
+0	is it raining
+0	weather forecast
+0	show me the forecast
+0	what is the forecast
+0	today's national weather forecast
+0	show forecast
+0	is the forecast good
+0	do I need an umbrella
+0	tell me the weather report
+0	give me the latest forecast
+0	give me friday's forecast
+0	Do you have thursday's weather report
+0	Give me most recent forecast
+0	i need the weather report for sunday
+0	give me your most recent weather report
+0	Tuesday weather forecast
+0	is monday to be sunny
+0	is tuesday to be sunny
+0	is wednesday to be sunny
+0	is thursday to be sunny
+0	is friday to be sunny
+0	is saturday to be sunny
+0	is sunday to be sunny
+0	is monday to be cloudy
+0	is tuesday to be cloudy
+0	is wednesday to be cloudy
+0	is friday to be cloudy
+0	is thursday to be cloudy
+0	is saturday to be cloudy
+0	is sunday to be cloudy
+0	is monday to be rainy
+0	is tuesday to be rainy
+0	is wednesday to be rainy
+0	is friday to be rainy
+0	is thursday to be rainy
+0	is there rain today
+0	is there sun today
+0	are there clouds today
+0	is it hot today?
+0	is there wind today?
+0	is there snow today?
+0	is there humidity right
+0	is there heat today
+0	are there rain clouds today
+0	are there ice storms today
+0	is tomorrow to be sunny
+0	is tomorrow to be cloudy
+0	is thursday to be rainy
+0	is friday to be storming
+0	is Friday to be hot
+0	is Tuesday to be clear
+0	Is Saturday to be humid
+0	is Monday to be snowy
+0	is Sunday to have sun
+0	is tomorrow to have ice
+0	Show the news
+0	show news
+0	show today's news
+0	Show new information
+0	are there any news
+0	What is happening today
+0	What happened then
+0	what's going on in the news today
+0	how are things in my city
+0	show me breaking news
+0	show me the announcements
+0	are there new notices in the newspaper
+0	i want to know new information
+0	show me recent events
+0	show me important events
+0	is something making the news
+0	whats is going on today
+0	did anything happened recently
+0	I would like to know the recents events
+0	I would like to know the news
+0	show me new information
+0	news
+0	is there any bad thing happening
+0	remind me to wash my clothes tomorrow
+0	can you remind me about my medication tomorrow
+0	i want to remember about my lessons later today
+0	remind me to do my homework
+0	add a reminder for tomorrow
+0	don't let me forget to do my homework
+0	i don't want to forget about my lessons
+0	i can't forget to take my medication tomorrow
+0	add a reminder
+0	add an event
+0	add a refresher
+0	help me remember this
+0	i want to be reminded to set family tasks
+0	i want to be reminded to play overwatch with friends
+0	i want to be reminded to log in to fortnite
+0	I want to be reminded to brush my teeth
+0	I want to be reminded to finish my report
+0	I want to be reminded to file those bug reports
+0	I want to be reminded to play baseball with the brothers
+0	i want to be reminded to clean the sheets
+0	i want to be reminded to feed all animals
+0	I want to be reminded to file taxes
+0	i want to be reminded to finish seasoning the steaks
+0	i want to be reminded to finish setting devices up
+0	i want to be reminded to finish interview questions
+0	i want to be reminded to complete the build
+0	i want to be reminded to finish reviewing candidates
+0	i don't want to forget to eat my lunch
+0	i don't want to forget to feed the animals
+0	i don't want to forget to draft my fantasy team
+0	I don't want to forget to bake that cake for the party
+0	i don't want to forget to grab a quick nap before driving
+0	I don't want to forget to watch Sunday Night Football
+0	I don't want to forget to watch Saturday Night Live
+0	I don't want to forget to watch the latest press conference
+0	I don't watch to forget to call the president
+0	i don't want to forget to file the bug reports
+0	I don't want to forget to listen to the latest
+0	i don't want to forget to cook lunch for the Martins
+0	I don't want to forget to charge my laptop
+0	I don't want to forget to update the spreadsheets
+0	I don't want to forget to assign family tasks
+0	I want to be reminded to file tax
+0	I want to be reminded to take out the trash
+0	I want to be reminded to cook dinner
+0	I want to be reminded to go to the store
+0	I want to be reminded to watch the game tonight
+0	I want to be reminded to call dad
+0	I want to be reminded to go to the doctor
+0	I want to be reminded to go early to spin class
+0	I want to be reminded to wash dog
+0	I want to be reminded to make dinner early
+0	I want to be reminded to call my therapist
+0	I want to be reminded to charge electronic devices
+0	I want to be reminded to go take a nap
+0	I want to be reminded to help my daughter with homework
+0	I don't want to forget to file taxes
+0	I can't forget to file taxes
+0	Don't let me forget to file taxes
+0	Please do not let me forget to file taxes
+0	I cannot forget to file taxes
+0	I really don't want to forget to file taxes
+0	I really can't forget to file taxes
+0	I don't want to forget to wash the dog
+0	I don't want to forget to take out the trash
+0	I don't want to forget to clean my car
+0	I don't want to forget to go to work
+0	i don't want to forget to go to band practice
+0	I don't want to forget my hair appointment
+0	I don't want to forget to feed to fish
+0	I don't want to forget to drive to dad's house
+0	I don't want to forget to text my girlfriend about dinner
+0	I don't want to forget to pay the bills
+0	I don't want to forget to email my boss about the tests
+0	I don't want to forget to color my hair
+0	I don't want to forget to charge my phone
+0	I don't want to forget to pack my laptop
+0	I don't want to forget to change the fish tank
+0	I don't want to forget to grab the books
+0	I don't want to forget to clean the bathroom
+0	Call emergency 
+0	Call the police
+0	Call firemen
+0	Call João
+0	I want to talk to João
+0	Phone João	 
+0	Make a phone call to João
+0	Call the cops
+0	Make a phone call to the police
+0	Call an ambulance
+0	Call a doctor
+0	Call the fire department
+0	Let me talk to João
+0	Call João's number
+	

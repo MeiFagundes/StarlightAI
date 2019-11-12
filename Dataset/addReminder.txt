@@ -1,4 +1,8 @@
 ﻿1	remind me to wash my clothes tomorrow
+1	remind me to
+1	remind me to
+1	remind me to
+1	remind me to
 1	can you remind me about my medication tomorrow
 1	i want to remember about my lessons later today
 1	remind me to do my homework
@@ -33,7 +37,7 @@
 1	I don't want to forget to watch Sunday Night Football
 1	I don't want to forget to watch Saturday Night Live
 1	I don't want to forget to watch the latest press conference
-1	I don't watch to forget to call the president
+1	I don't want to forget to call the president
 1	i don't want to forget to file the bug reports
 1	I don't want to forget to listen to the latest
 1	i don't want to forget to cook lunch for the Martins
@@ -78,6 +82,9 @@
 1	I don't want to forget to change the fish tank
 1	I don't want to forget to grab the books
 1	I don't want to forget to clean the bathroom
+0	wake me up
+0	wake me up
+0	wake me up at
 0	i didn't remember about my coding today
 0	i wish i could remember the important things in my life
 0	i don't like the bad news recently
