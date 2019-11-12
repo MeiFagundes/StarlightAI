@@ -1,4 +1,12 @@
-1	Let's play a game
+1	How are you
+1	How you doing
+1	Hey there
+1	Howdy
+1	What's up
+1	What's going on
+0	Where are you
+0	What are you
+0	Who are you
 0	Show weather
 0	Show climate
 0	Show temperature
@@ -46,7 +54,7 @@
 0	How's it like outside
 0	Do you have rain
 0	Is it a beautiful day for a walk
-0	What�s the weather forecast
+0	What's the weather forecast
 0	is it raining
 0	weather forecast
 0	show me the forecast
@@ -601,3 +609,17 @@
 0	I don't want to forget to change the fish tank
 0	I don't want to forget to grab the books
 0	I don't want to forget to clean the bathroom
+0	Call emergency
+0	Call the police
+0	Call firemen
+0	Call João
+0	I want to talk to João
+0	Phone João
+0	Make a phone call to João
+0	Call the cops
+0	Make a phone call to the police
+0	Call an ambulance
+0	Call a doctor
+0	Call the fire department
+0	Let me talk to João
+0	Call João's number

@@ -1,4 +1,17 @@
-1	Let's play a game
+1	Call emergency 
+1	Call the police
+1	Call firemen
+1	Call João
+1	I want to talk to João
+1	Phone João
+1	Make a phone call to João
+1	Call the cops
+1	Make a phone call to the police
+1	Call an ambulance
+1	Call a doctor
+1	Call the fire department
+1	Let me talk to João
+1	Call João's number
 0	Show weather
 0	Show climate
 0	Show temperature

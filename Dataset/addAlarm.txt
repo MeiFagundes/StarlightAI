@@ -16,6 +16,7 @@
 1	i gotta go to the doctor tomorrow, set an alarm to 10 pm
 1	i want to wake up at 13:10 pm
 1	i need to wake up at 13:10 pm
+1	add alarm for 10:30
 1	add alarm for 10:30 am
 1	add alarm for 20:30
 1	add an alarm for 11:30 pm

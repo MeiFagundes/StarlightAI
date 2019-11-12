@@ -23,6 +23,12 @@
 1	is there any bad thing happening
 1	yo what's new today?
 1	anything new today?
+1	what is happening today?
+1	what's new today?
+1	what's happening in today's news?
+1	show me today's news please
+1	i want to see the news for today
+1	anything new today?
 0	i don't like the bad news recently
 0	Show weather
 0	Show climate
