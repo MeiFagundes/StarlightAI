@@ -1,4 +1,4 @@
-**Starlight** is an experimental Natural Language Processing (NLP) Engine built with the ML.NET framework. It processes requests based on a Machine Learning Dataset, which comes with the project and is editable by the user.
+**Starlight** is an experimental Natural Language Processing Engine built with the ML.NET framework. It processes requests based on a Machine Learning Dataset, which comes with the project and is editable by the user.
 
 
 
@@ -6,11 +6,11 @@ Example:
 
 **Query:** *Wake me up at 10:30 AM* 
 
-**Current date/time:** 9-nov-2019 01:13 PM
+**Current date/time:** 9-nov-2019, 01:13 PM
 
 **Output:**
 
-```
+```json
 {
   "query": "wake me up at 10:30",
   "intents": [
