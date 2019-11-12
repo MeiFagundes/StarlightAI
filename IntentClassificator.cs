@@ -24,13 +24,13 @@ namespace Starlight {
         }
 
         
-        public JObject Cognize(string query) {
+        public JObject Cognize(string query, bool debug = false) {
 
             Utterance utterance = new Utterance();
             utterance.Query = query;
 
             for (int i = 0; i < _intentList.Count; i++)
-                utterance.Intents.Add(_binaryClassificators[i].Classify(query));
+                utterance.Intents.Add(_binaryClassificators[i].Classify(query, debug));
 
             EntityExtraction.EntityExtractorController.Fetch(utterance);
 

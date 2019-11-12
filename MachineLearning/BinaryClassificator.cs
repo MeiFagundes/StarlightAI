@@ -64,6 +64,7 @@ namespace Starlight.MachineLearning {
             var estimator = _mlContext.Transforms.Text.FeaturizeText(outputColumnName: "Features", inputColumnName: nameof(ClassificationData.Content))
                 .Append(_mlContext.BinaryClassification.Trainers.SdcaLogisticRegression(labelColumnName: "Label", featureColumnName: "Features"));
 
+            Console.WriteLine("build" + _datasetName);
             // Training model
             if (debug)
                 Console.WriteLine("Building and training " + _datasetName + " model...");
@@ -75,12 +76,20 @@ namespace Starlight.MachineLearning {
             if (debug)
                 Console.WriteLine("Evaluating Model accuracy with Dataset");
             IDataView predictions = _model.Transform(splitTestSet);
-            CalibratedBinaryClassificationMetrics metrics = _mlContext.BinaryClassification.Evaluate(predictions, "Label");
 
-            if (debug) {
-                Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
-                Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
-                Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
+            try {
+
+                CalibratedBinaryClassificationMetrics metrics = _mlContext.BinaryClassification.Evaluate(predictions, "Label");
+
+                if (debug) {
+                    Console.WriteLine($"Accuracy: {metrics.Accuracy:P2}");
+                    Console.WriteLine($"Auc: {metrics.AreaUnderRocCurve:P2}");
+                    Console.WriteLine($"F1Score: {metrics.F1Score:P2}");
+                }
+            }
+            catch (ArgumentOutOfRangeException) {
+
+                Console.WriteLine("Test fraction percentage too low to evaluate.");
             }
         }
 
@@ -88,7 +97,7 @@ namespace Starlight.MachineLearning {
 
             _dataView = _mlContext.Data.LoadFromTextFile<ClassificationData>(datasetPath, hasHeader: hasHeader);
             // testFraction -> Percentage of phrases compared | Default: 10%
-            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(_dataView, testFraction: 0.9);
+            TrainTestData splitDataView = _mlContext.Data.TrainTestSplit(_dataView, testFraction: 0.1);
             return splitDataView;
         }
 
