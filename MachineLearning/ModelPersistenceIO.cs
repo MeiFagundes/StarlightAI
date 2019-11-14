@@ -1,8 +1,7 @@
 ﻿using Microsoft.ML;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
+using System.Xml.Linq;
 
 namespace Starlight.MachineLearning {
     public class ModelPersistenceIO {
@@ -22,6 +21,15 @@ namespace Starlight.MachineLearning {
                 return mlContext.Model.Load(modelPath, out dataViewSchema);
             else
                 return null;
+        }
+        public static void SaveHashInfoToXML() {
+
+            new XDocument(
+                new XElement("model-cache",
+                    new XElement("someNode", "someValue")
+                )
+            )
+            .Save("starlight-cfg.xml");
         }
     }
 }
