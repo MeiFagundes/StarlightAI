@@ -3,15 +3,73 @@
 1	I would like to listen to a song
 1	I want to listen to a song
 1	Listen to song
+1	listen to despacito
+1	listen to never say die
+1	listen to music
+1	listen to
+1	listen to
+1	listen to
+1	listen to
+1	listen to
+1	I want to listen to Devagarinho
+1	I want to listen to Atrasadinha 
+1	I want to listen to Apelido Carinhoso
+1	I want to listen to Quem ensinou Fui Eu
+1	I want to listen to Tô com Moral no Céu!
+1	I want to listen to Dona de Mim
+1	I want to listen to Disk Me 
+1	I want to listen to SOMEONE YOU LOVED
+1	I want to listen to OLD TOWN ROAD
+1	I want to listen to I DON'T CARE
+1	I want to listen to GIANT
+1	I want to listen to SWEET BUT PSYCHO
+1	I want to listen to BAD GUY
+1	I want to listen to DON'T CALL ME UP
+1	I want to listen to VOSSI BOP
+1	I want to listen to 7 RINGS
+1	I want to listen to PIECE OF YOUR HEART
+1	I want to listen to WOW
+1	I want to listen to SHOTGUN
+1	I want to listen to SUNFLOWER
+1	I want to listen to DANCING WITH A STRANGER
+1	I want to listen to JUST YOU AND I	
+1	I want to listen to LOCATION
+1	I want to listen to SHALLOW
+1	I want to listen to SENORITA
+1	I want to listen to HOLD ME WHILE YOU WAIT
+1	I want to listen to LADBROKE GROVE
+1	listen to Devagarinho
+1	listen to Atrasadinha 
+1	listen to Apelido Carinhoso
+1	listen to Quem ensinou Fui Eu
+1	listen to Tô com Moral no Céu!
+1	listen to Dona de Mim
+1	listen to Disk Me 
+1	listen to SOMEONE YOU LOVED
+1	listen to OLD TOWN ROAD
+1	listen to I DON'T CARE
+1	listen to GIANT
+1	listen to SWEET BUT PSYCHO
+1	listen to BAD GUY
+1	listen to DON'T CALL ME UP
+1	listen to VOSSI BOP
+1	listen to 7 RINGS
+1	listen to PIECE OF YOUR HEART
+1	listen to WOW
+1	listen to SHOTGUN
+1	listen to SUNFLOWER
+1	listen to DANCING WITH A STRANGER
+1	listen to JUST YOU AND I	
+1	listen to LOCATION
+1	listen to SHALLOW
+1	listen to SENORITA
+1	listen to HOLD ME WHILE YOU WAIT
+1	listen to LADBROKE GROVE
 1	Play Lorde's album
 1	Play Pure Heroine album
-1	Open my music player
-1	Open Spotify
 1	Play Rihanna's newest release
 1	Play Nirvana
 1	Play Amy Winehouse
-1	I want to request a song
-1	I'd like to request a song
 1	Play music for gaming
 1	Play happy music
 1	Play slow music
@@ -20,8 +78,6 @@
 1	Play some music
 1	Play Skyfall by Adele
 1	Play Today's Top Hits playlist
-1	Launch my music player
-1	Launch Spotify
 1	I want listen to some music
 1	Play my jam
 1	Play any Eminem song
