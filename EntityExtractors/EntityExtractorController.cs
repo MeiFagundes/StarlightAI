@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace Starlight.EntityExtraction {
+namespace Starlight.EntityExtractors {
     public class EntityExtractorController {
         public static void Fetch(Utterance u) {
 

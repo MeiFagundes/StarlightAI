@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Starlight.EntityExtraction {
+namespace Starlight.EntityExtractors {
     public class PlaySong {
 
         public static void Fetch(Utterance u) {

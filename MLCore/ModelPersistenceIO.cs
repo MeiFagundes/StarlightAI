@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Xml.Linq;
 
-namespace Starlight.MachineLearning {
+namespace Starlight.MLCore {
     public class ModelPersistenceIO {
 
         const String _MODEL_PATH = "\\Model\\";

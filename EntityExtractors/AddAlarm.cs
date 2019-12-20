@@ -5,7 +5,7 @@ using System.Globalization;
 using System.Text.RegularExpressions;
 using System.Threading;
 
-namespace Starlight.EntityExtraction {
+namespace Starlight.EntityExtractors {
     public class AddAlarm {
 
         public static void Fetch(Utterance u) {
