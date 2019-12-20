@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Newtonsoft.Json.Linq;
-using Starlight.MachineLearning;
+using Starlight.MLCore;
 
 namespace Starlight {
     public class IntentClassificator {
@@ -32,7 +32,11 @@ namespace Starlight {
             for (int i = 0; i < _intentList.Count; i++)
                 utterance.Intents.Add(_binaryClassificators[i].Classify(query, debug));
 
-            EntityExtraction.EntityExtractorController.Fetch(utterance);
+            if (utterance.TopScoringIntent.Score < 0.8) {
+                utterance.Intents.Add(new Intent("none", (float) 0.8));
+            }
+
+            EntityExtractors.EntityExtractorController.Fetch(utterance);
 
             return utterance.GetResponse();
 
