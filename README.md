@@ -1,14 +1,16 @@
-**Starlight** is a Natural Language Processing Engine built with the ML.NET framework. It processes requests using binary classification based on a Machine Learning Dataset.
+# Starlight
 
-The included Dataset is task-oriented and has entity extraction built in, the user can edit or replace it according to the intended use case.
+Starlight is a C# natural-language intent classification project built with ML.NET. It trains a binary classifier for each intent from the corresponding text file in `Dataset/` and scores an input utterance against those intents. Its JSON response includes intent scores and entity fields.
 
+The included datasets cover intents such as alarms, reminders, weather, news, music, calls, and small talk. The repository contains date and time extraction classes for alarm and reminder requests. The console entry point prompts for an utterance and prints the result.
 
+## Example
 
-Example:
+The following example is preserved from the original README, using its November 9, 2019 date context.
 
 **Query:** *Wake me up at 10:30*
 
-**Current date/time:** 9-nov-2019, 01:13 PM
+**Current date/time in the example:** November 9, 2019, 1:13 PM
 
 **Output:**
 
@@ -40,3 +42,6 @@ Example:
 }
 ```
 
+## Technologies
+
+C#, .NET Core 3.0 and ML.NET 1.3.1.
